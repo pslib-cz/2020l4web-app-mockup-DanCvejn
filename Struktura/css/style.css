@@ -282,8 +282,9 @@ nav ul li a img {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
+    color: white;
 }
 
 .user-edit .header {
@@ -301,6 +302,30 @@ nav ul li a img {
     margin-left: 0;
 }
 
+.user-edit form {
+    margin-top: 2vh;
+}
+
+.user-edit form p {
+    font-size: 1.3em;
+}
+
+.user-edit form input {
+    box-shadow: none;
+    border-bottom: 2px solid var(--gray);
+    font-size: 15px;
+}
+
+.user-edit form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--gray);
+    width: 60%;
+    height: 100px;
+    color: var(--white);
+    font-family: "Montserrat";
+    font-size: 15px;
+}
 
 
 /* --------- */
