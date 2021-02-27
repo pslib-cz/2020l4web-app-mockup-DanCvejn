@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 nav ul li a img {
-    width: 20px;
+    height: 25px;
 }
 
 .title {
@@ -275,5 +275,34 @@ nav ul li a img {
     border-bottom: 1px solid var(--white);
     padding: 5px;
 }
+
+/* USER EDIT */
+
+.user-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.user-edit .header {
+    width: 100%;
+    margin-top: 8vh;
+    font-size: .8em;
+    justify-content: center;
+}
+
+.user-edit .header::after {
+    display: none;
+}
+
+.user-edit .header h1 {
+    margin-left: 0;
+}
+
+
+
+/* --------- */
 
 /* ========= */
