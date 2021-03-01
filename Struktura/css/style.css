@@ -141,7 +141,8 @@ nav ul li a img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: .2s;
+    transition: .3s;
+    transition-property: opacity;
 }
 
 .container .active {
@@ -149,10 +150,9 @@ nav ul li a img {
 }
 
 .container .notactive {
+    margin-top: 500%;
     position: absolute;
-    margin-top: -150%;
     opacity: 0;
-    transition: .2s;
 }
 
 .container form {
