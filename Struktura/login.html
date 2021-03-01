@@ -8,18 +8,47 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="icon" type="image/png" href="./img/logo_dark.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
-<body>
-    <main class="container mt">
+<body class="overflowY">
+    <main class="container mt-15">
         <div class="header">
-            <h1>Sign In</h1>
-            <a href="register.html"><h1>Sign Up</h1></a>
+            <h1 class="log">Sign In</h1>
+            <h1 class="reg darker">Sign Up</h1>
         </div>
-        <form>
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <a href="index.html" class="btn">SIGN IN</a>
-        </form>
+        <div class="login active">
+            <form>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <a href="index.html" class="btn">SIGN IN</a>
+            </form>
+            <a href="./forget.html" class="forgotpass">Forget password?</a>
+            <div class="sites">
+                <a href="#" class="logsite"><img src="./img/logo_facebook.png"><p>Sign In by Facebook</p></a>
+                <a href="#" class="logsite"><img src="./img/logo_google.png"><p>Sign In by Google</p></a>
+            </div>
+        </div>
+        <div class="register notactive">
+            <form>
+                <input type="text" name="name" placeholder="Full name" required>
+                <input type="text" name="email" placeholder="Your email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirmPassword" placeholder="Repeat password" required>
+                <p>Give us some of your video by which we can accept you</p>
+                <label for="upload" class="upload">
+                    Verification video
+                    <input type="file" id="upload" name="verVideo" required>
+                </label>
+                <a href="index.html" class="btn">SIGN UP</a>
+            </form>
+            <div class="sites">
+                <a href="#" class="logsite"><img src="./img/logo_facebook.png"><p>Sign Up by Facebook</p></a>
+                <a href="#" class="logsite"><img src="./img/logo_google.png"><p>Sign Up by Google</p></a>
+            </div>
+        </div>
     </main>
+    <div class="bgpolygon"></div>
+    <div class="bgpolygon"></div>
+    <script src="./js/app.js"></script>
 </body>
 </html>
