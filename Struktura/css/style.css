@@ -97,6 +97,10 @@ nav ul li img {
     transition: .3s;
 }
 
+.mt-10 {
+    margin-top: 10vh;
+}
+
 .mt-5 {
     margin-top: 5vh;
     transition: .3s;
@@ -467,10 +471,11 @@ nav ul li img {
 
 .menuCloser {
     position: absolute;
-    top: 2%;
-    color: var(--white);
+    top: 1%;
+    right: 3%;
+    transform: rotate(45deg);
     text-decoration: none;
-    font-size: 15px;
+    width: 30px;
 }
 
 /* USER EDIT */
@@ -532,3 +537,33 @@ nav ul li img {
 /* --------- */
 
 /* ========= */
+
+/* VIDEO PAGES */
+
+
+.videopage .header {
+    width: 100%;
+}
+
+.videopage .header::after {
+    width: 50%;
+}
+
+.videopage .header h1 {
+    margin-right: 0 !important;
+}
+
+.videopage form {
+    margin-top: 5vh;
+}
+
+.videopage form p {
+    width: 70%;
+    color: var(--white);
+    font-size: 15px;
+    text-align: justify;
+    margin: 50px 0 0 0;
+}
+
+
+/* =========== */
