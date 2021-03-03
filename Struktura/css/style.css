@@ -73,7 +73,7 @@ nav ul li a {
     color: var(--white);
 }
 
-nav ul li a img {
+nav ul li img {
     height: 25px;
 }
 
@@ -307,9 +307,17 @@ nav ul li a img {
 
 /* Forget password */
 
-.forget {
+.forget div {
     margin-top: 5vh;
     width: 100%;
+}
+
+.forget .header {
+    margin-top: 0;
+}
+
+.forget .header h1 {
+    margin: 20px 0px !important;
 }
 
 .forget form input {
@@ -352,6 +360,7 @@ nav ul li a img {
     border-radius: 100px;
     padding: 5px;
     border: 2px solid var(--blue);
+    margin-right: 20px;
 }
 
 .user .header::after {
@@ -363,14 +372,6 @@ nav ul li a img {
     font-size: 15px;
     line-height: calc(1em + 1em/2);
     max-width: 75%;
-}
-
-.user .options {
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2vh;
 }
 
 .user .stats {
@@ -427,6 +428,51 @@ nav ul li a img {
     padding: 5px;
 }
 
+.user .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--darkblue);
+    width: 60%;
+    height: 100vh;
+    border-left: 1px solid var(--blue);
+    transition: .4s ease-in;
+    z-index: 10;
+}
+
+.user .menu ul {
+    width: 100%;
+    margin: 50px 0;
+    padding: 0;
+}
+
+.user .menu ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.user .menu ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2em;
+}
+
+.user .close {
+    right: -100%;
+}
+
+.menuCloser {
+    position: absolute;
+    top: 2%;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+}
+
 /* USER EDIT */
 
 .user-edit {
@@ -440,13 +486,17 @@ nav ul li a img {
 
 .user-edit .header {
     width: 100%;
-    margin-top: 8vh;
+    margin-top: 10vh;
     font-size: .8em;
     justify-content: center;
 }
 
 .user-edit .header::after {
     display: none;
+}
+
+.user-edit .header h1 {
+    margin-right: 0px !important;
 }
 
 .user-edit .header h1 {

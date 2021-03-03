@@ -19,3 +19,11 @@ $('.log').click(function(){
     $('.container').removeClass('mt-5');
     $('.container').addClass('mt-15');
 })
+
+$('.menuOpener').click(function(){
+    $('.menu').removeClass('close');
+})
+
+$('.menuCloser').click(function(){
+    $('.menu').addClass('close');
+})

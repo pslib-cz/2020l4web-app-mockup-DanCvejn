@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="icon" type="image/png" href="./img/logo_dark.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
     <main class="container">
@@ -15,34 +16,40 @@
             <ul>
                 <li><a href="./index.html"><img src="./img/icon_back.svg"></a></li>
                 <li><a href="./index.html"><img src="./img/title.svg" class="title"></a></li>
-                <li><a href="./add.html"><img src="./img/icon_add.svg"></a></li>
+                <li><img src="./img/icon_add.svg" class="menuOpener"></li>
             </ul>
         </nav>
         <div class="user">
+            <div class="menu close">
+                <a href="#" class="menuCloser">Close</a>
+                <ul>
+                    <li><a href="add.html">Add video</a></li>
+                    <li><a href="edituser.html">Edit profile</a></li>
+                </ul>
+                <ul>
+                    <li><a href="login.html">Log Out</a></li>
+                </ul>
+            </div>
             <div class="header">
                 <img src="./img/profil_img.jpg" alt="">
                 <h1>Daniel Cvejn</h1>
             </div>
             <p class="bio">Jsem student, který je nadšený do natáčení a střihu videí</p>
-            <div class="options">
-                <a href="./edituser.html" class="btn">Upravit</a>
-                <a href="./login.html" class="btn">Odhlásit</a>
-            </div>
             <div class="stats">
                 <div class="stat">
                     <p class="num">3</p>
-                    <p>Videí</p>
+                    <p>Videos</p>
                 </div>
                 <div class="stat">
                     <p class="num">241</p>
-                    <p>Sledujících</p>
+                    <p>Followers</p>
                 </div>
                 <div class="stat">
                     <p class="num">53</p>
-                    <p>Sleduje</p>
+                    <p>Following</p>
                 </div>
             </div>
-            <h2>Videa</h2>
+            <h2>Videos</h2>
             <div class="videa">
                 <img src="./img/náhled.jpg">
                 <img src="./img/náhled.jpg">
@@ -50,5 +57,6 @@
             </div>
         </div>
     </main>
+    <script src="./js/app.js"></script>
 </body>
 </html>
