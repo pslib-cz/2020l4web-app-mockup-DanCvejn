@@ -88,6 +88,10 @@ nav ul li a img {
 
 /* LOG IN AND REGISTER */
 
+.mt-25 {
+    margin-top: 25vh;
+}
+
 .mt-15 {
     margin-top: 15vh;
     transition: .3s;
@@ -142,7 +146,6 @@ nav ul li a img {
     align-items: center;
     flex-direction: column;
     transition: .3s;
-    transition-property: opacity;
 }
 
 .container .active {
@@ -252,7 +255,8 @@ nav ul li a img {
     align-items: center;
     flex-direction: row;
     width: 100%;
-    background-color: var(--blue);
+    background-color: transparent !important;
+    box-shadow: 2px 2px 6px black;
     padding: 5px 0px;
     border-radius: 50px;
     margin-top: 10px;
@@ -299,6 +303,23 @@ nav ul li a img {
     height: 85vh;
     z-index: 1;
     clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 0);
+}
+
+/* Forget password */
+
+.forget {
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.forget form input {
+    width: 70%;
+    height: 30px;
+}
+
+.forget form .btn {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
 
