@@ -82,6 +82,64 @@ nav ul li img {
     height: 20px;
 }
 
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7.5vh;
+}
+
+.content .post {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.content .post .profile {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.content .post .profile img {
+    border-radius: 100px;
+    padding: 3px;
+    border: 2px solid var(--blue);
+    margin: 3px 5px;
+    width: 35px;
+}
+
+.content .post .profile .name {
+    color: var(--white);
+    font-size: 1.5em;
+    padding-left: 10px;
+    font-weight: 200;
+}
+
+.content .post > a img {
+    width: 100%;
+}
+
+.content .post .postDesc img, .content .post .postDesc svg {
+    height: 30px;
+}
+
+.content .post .postDesc .like {
+    fill: none;
+    stroke: var(--white);
+    stroke-width: 60px;
+}
+
+.content .post .postDesc .liked {
+    fill: var(--white);
+}
+
 
 /* ========= */
 

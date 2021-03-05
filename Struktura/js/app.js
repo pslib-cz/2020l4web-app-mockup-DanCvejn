@@ -27,3 +27,4 @@ $('.menuOpener').click(function(){
 $('.menuCloser').click(function(){
     $('.menu').addClass('close');
 })
+
