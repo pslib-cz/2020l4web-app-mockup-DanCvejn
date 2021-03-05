@@ -33,3 +33,8 @@ Při přidávání videa uživatel klasicky vyplní popisek videa a vloží vide
 ### Kontrola videí
 
 Kontrola videí probíhá samotnými uživateli. Každý uživatel se do této kontroli může zapojit, ale musí o to požádat. Pokud video schválí nějaký počet lidí, tak je kompletně nahráno a ostatní uživatelé ho uvidí. V této části také probíhá kontrola videí, která nahráli uživatelé, kteří se chtějí zaregistrovat. Nejsou ale nijak oddělená. 
+
+
+## Části aplikace
+
+Všechny soubory potřebné pro tvorbu by měli být k nalezení ve složce struktura. Na demo site si můžes prohlédnout, jak by měla aplikace fungovat. Některé části jako třeba buttony ve formulářích jsou nahrazeny tagem a, abych mohl lehce procházet mezi stránkami, ale jelikož mají classu, tak není problém se jejich nahrazením.
