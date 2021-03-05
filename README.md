@@ -16,6 +16,8 @@ Stránka login je klasická stránka, kde se uživatel přihlásí a hodí ho to
 
 Registace je také skoro jako každá jiná, ale s tím, že uživatel musí nahrát video, které je poté odesláno na schválení. Dokud není toto video schváleno, tak se uživatel nemá možnost přihlásit. Samotné video je poté nahráno i na uživatelův profil.
 
+Uživatel by měl mít také možnost přihlášení a registrace přes Google účet a Facebook účet. Při registraci by měl být uživatel přesměrován na stránku, kde nahraje video ke kontrole.
+
 ### Hlavní stránka aplikace
 
 Tato stránka je velmi podobná instagramu. Uživatelovi se zde objevují videa, které si může po kliknutí přehrát na samostatné stránce. Jinak zde najde button, který ho přenese na jeho profil, dále button na vyhledávání, přidání videa a samotnou hlavní stránku.
