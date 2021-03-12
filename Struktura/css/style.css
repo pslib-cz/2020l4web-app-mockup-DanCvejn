@@ -17,7 +17,7 @@ body, html { margin: 0; padding: 0; font-family: "Montserrat"; background-color:
     align-items: center;
     flex-direction: column;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     height: 100vh;
     margin: auto;
     z-index: 5;
@@ -28,6 +28,10 @@ body, html { margin: 0; padding: 0; font-family: "Montserrat"; background-color:
     height: 100vh;
 }
 
+h1, h2, h3, h4, h5 ,h6 {
+    color: var(--white);
+}
+
 /* MAIN SITE */
 
 
@@ -36,7 +40,8 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
+    max-width: 700px;
     height: 70px;
     border-bottom: 2px solid var(--blue);
     background-color: var(--darkblue);
@@ -89,6 +94,7 @@ nav ul li img {
     align-items: center;
     flex-direction: column;
     margin-top: 7.5vh;
+    padding-bottom: 10vh;
 }
 
 .content .post {
@@ -126,8 +132,25 @@ nav ul li img {
     width: 100%;
 }
 
+.content .post .postDesc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content .post .postDesc > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+}
+
 .content .post .postDesc img, .content .post .postDesc svg {
-    height: 30px;
+    height: 25px;
+    padding: 5px;
 }
 
 .content .post .postDesc .like {
@@ -139,6 +162,195 @@ nav ul li img {
 .content .post .postDesc .liked {
     fill: var(--white);
 }
+
+.content .post .postDesc p {
+    color: var(--white);
+    width: 96%;
+}
+
+/* Search */
+
+.finds {
+    width: 98vw;
+    color: var(--white);
+    border-collapse: collapse;
+}
+
+.finds .userfound {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    padding: 1vh 0;
+    text-decoration: none;
+}
+
+
+.finds .userfound img {
+    height: 100%;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.finds .userfound h4 {
+    margin: 5px;    
+    font-size: 1.6em;
+    font-weight: 200;
+}
+
+.container .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    width: 85%;
+}
+
+.container .search input {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    text-align: left;
+    padding-left: 30px;
+    border-left: 1px solid var(--blue);
+    font-size: 20px;
+}
+
+.container .search ::placeholder {
+    text-align: left;
+}
+
+.container .search a {
+    margin: 0;
+    padding: 0;
+    height: 50px;    
+}
+
+.container .search img {
+    height: 30px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Comments */
+
+.comments h1 {
+    text-align: center;
+}
+
+.comments {
+    width: 98vw;
+    color: var(--white);
+    border-collapse: collapse;
+}
+
+.comments .comment {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    padding: 1vh 0;
+    border-top: 1px solid var(--blue);
+    text-decoration: none;
+    color: var(--white);
+}
+
+.comments .comment:last-child {
+    border-bottom: 1px solid var(--blue);
+}
+
+.comments .comment img {
+    height: 100%;
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.comments .comment h4, .comments .comment p {
+    margin: 5px;    
+}
+
+.container .addcomment {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 50px;
+    border-top: 1px solid var(--blue);
+    padding-top: 5px;
+}
+
+.container .addcomment input {
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 17px;
+}
+
+.container .addcomment ::placeholder {
+    text-align: left;
+}
+
+.container .addcomment a {
+    margin: 0;
+    padding: 0;
+    height: 50px;    
+}
+
+.container .addcomment img {
+    height: 30px;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Chat */
+
+.chat p {
+    color: var(--gray);
+}
+
+.container form .sendmess {
+    transform: rotate(28deg);
+}
+
+.messages {
+    width: 100%;
+    position: absolute;
+    bottom: 80px;
+}
+
+.messages .message {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.messages .message p {
+    color: var(--white);
+    padding: 10px;
+    background-color: var(--blue);
+    width: fit-content;
+    margin: 5px 15px;
+}
+
+.messages .send {
+    float: right;
+}
+
+.messages .received {
+    float: left;
+}
+
 
 
 /* ========= */
@@ -408,6 +620,7 @@ nav ul li img {
     text-align: center;
     color: var(--white);
     margin-top: 10vh;
+    width: 100%;
 }
 
 .user .header {
@@ -480,9 +693,9 @@ nav ul li img {
 }
 
 .user .videa img {
-    width: 200px;
+    width: 45%;
     margin-bottom: 25px;
-    margin-left: calc((100% - 400px) /3);
+    margin-left: calc((100% - 90%) /3);
 }
 
 .user .btn {
@@ -529,6 +742,18 @@ nav ul li img {
     right: -100%;
 }
 
+.follow {
+    background-color: transparent;
+    border: 0;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: var(--white);
+    text-decoration: none;
+    box-shadow: 2px 2px 10px black;
+}
+
 .menuCloser {
     position: absolute;
     top: 1%;
@@ -536,6 +761,84 @@ nav ul li img {
     transform: rotate(45deg);
     text-decoration: none;
     width: 30px;
+}
+
+.block-off {
+    position: absolute;
+    width: 70vw;
+    height: 170px;
+    background-color: var(--darkblue);
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    z-index: 20;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.block-off h3 {
+    margin: 13px 0;
+    font-size: 30px;
+}
+
+.block-off div {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-top: 2px solid var(--blue);
+}
+
+.block-off div a {
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.block-on {
+    display: flex;
+}
+
+.report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .report .header h1 {
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+    display: block;
+}
+
+.report form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.report form textarea {
+    width: 60%;
+    height: 80px;
+    text-align: left;
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    color: var(--white);
+    font-size: 18px;
+}
+
+.report ::placeholder {
+    text-align: left;
 }
 
 /* USER EDIT */
@@ -547,6 +850,7 @@ nav ul li img {
     flex-direction: column;
     width: 100%;
     color: white;
+    padding-bottom: 10vh;
 }
 
 .user-edit .header {

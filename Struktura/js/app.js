@@ -28,3 +28,11 @@ $('.menuCloser').click(function(){
     $('.menu').addClass('close');
 })
 
+$('.block').click(function(){
+    $('.block-off').toggleClass('block-on');
+    $('.menu').addClass('close');
+})
+
+$('.result').click(function(){
+    $('.block-off').removeClass('block-on');
+})
