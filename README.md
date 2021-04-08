@@ -2,7 +2,7 @@
 **Autor:** *Daniel Cvejn*
 ## Demo site
 
-**Ukázka aplikace [zde](https://pslib-cz.github.io/2020l4web-typography-css-library-DanCvejn/).**
+**Ukázka aplikace [zde](https://test.dcreative.cz/vendo/).**
 
 ## Představení
 
