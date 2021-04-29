@@ -991,9 +991,58 @@ nav ul li img {
     margin-right: 10px;
 }
 
+.choose .group input:checked {
+    background-color: #fff;
+}
+
 .choose .group label {
     color: var(--white);
     font-size: 25px;
 }
 
 /* =========== */
+
+
+.share {
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    padding: 1em;
+    width: 85vw;
+    height: 30vh;
+    background-color: #fff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.share h3 {
+    color: black;
+    padding: 0;
+    margin: 20px;
+    font-size: 1.7em;
+}
+
+.share div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.share div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+
+.share div a img {
+    width: 40px;
+}
